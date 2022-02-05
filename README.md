@@ -1,2 +1,2 @@
 # Projektipare
-Projekti i pare ne HTML/CSS
+Projekti i pare ne HTML/CSS BootCamp
