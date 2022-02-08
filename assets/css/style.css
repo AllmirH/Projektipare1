@@ -15,7 +15,7 @@ section.home {
 }
 
 header {
-  width: 100%;
+  width: 95%;
   height: auto;
 }
 .menu {
@@ -37,7 +37,7 @@ nav ul {
 
 nav ul li {
   list-style-type: none;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 18px;
   padding-left: 30px;
 }
@@ -63,7 +63,7 @@ nav li a:hover {
 }
 
 element.style {
-  margin-left: -30px;
+  margin-left: -20px;
 }
 
 .promotion {
@@ -74,44 +74,128 @@ element.style {
   font-size: 24;
 }
 .promotion h1 {
-  font-size: 40px;
+  font-size: 10vh;
 }
 .promotion .image img {
-  padding: 40px;
-  width: 500px;
+  padding: 30px;
+  width: 400px;
 }
+/* HOME SECTION */
+.logo,
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  width: 30%;
+}
+
+.logo img {
+  width: 100%;
+  display: block;
+}
+
+nav {
+  width: 60%;
+}
+
+nav li {
+  width: 25%;
+}
+
+nav a {
+  width: 100%;
+  text-align: center;
+  display: block;
+
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.promotion {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 550px 650px;
+}
+
+.promotion h1,
+.promotion p {
+  text-align: center;
+}
+
+.promotion h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.promotion a {
+  width: 160px;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  border: 2px solid #fff;
+  padding: 6px 20px;
+  margin: 0px auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s;
+  text-transform: uppercase;
+}
+
+.promotion a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* SHOP SECTION */
 
 .container-2 {
   width: 800px;
   height: 80vh;
   margin: 0 auto;
+  font-weight: bold;
 }
 
 section.shop {
   width: auto;
-  height: 100%;
+  height: 100vh;
   background-image: url(./images/bakgroundcoverp2.png);
   padding: 100% 0px;
+  padding: 10px 0px;
 }
+
 section.shop h2 {
-  color: black;
-  font-size: 52px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
+
 section.shop p {
-  color: black;
+  color: #000;
   margin-top: 20px;
-  font-size: 24;
+  font-size: 24px;
   text-align: center;
+  font-weight: bold;
 }
 
 section.shop .products {
   width: 100%;
   height: 40vh;
   margin: 70px 0px;
-  display: flex;
-  grid-template-columns: repet(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -127,6 +211,7 @@ section.shop .product {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .one {
   background-image: url(./images/smile180x280new.png);
 }
@@ -134,7 +219,7 @@ section.shop .product {
   background-image: url(./images/p2teeth2.png);
 }
 .three {
-  background-image: url(./images/180x280\ teeths.png);
+  background-image: url(./images/180x280teeths.png);
 }
 
 .products .details {
@@ -162,17 +247,17 @@ section.shop .product {
 }
 
 .products .details h3 {
-  font-size: 36px;
+  font-size: 16px;
 }
 
 .products .details p {
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
 .products .details a {
-  width: 40%;
-  height: 40px;
+  width: 50%;
+  height: 50px;
   margin: 0 auto;
   border: 2px solid #000;
   color: #000;
@@ -190,12 +275,12 @@ section.shop .product {
 }
 
 .shop .more {
-  width: 200px;
+  width: 100px;
   height: 40px;
   margin: 0 auto;
   border: 2px solid #000;
   color: #000;
-  text-decoration: none;
+  text-decoration: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,20 +293,30 @@ section.shop .product {
   transform: scale(1.1);
 }
 
+.container-3 {
+  width: 1400px;
+  height: 100vh;
+  margin: 10 auto;
+}
+
 /* ABOUT SECTION */
 section.about {
   width: 100%;
-  height: 100vh;
-  /* background-color: #000; */
+  height: auto;
+  background-color: #000;
 
-  background-image: url(./images/bora.jpg);
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto 50%;
 }
 
-section.about .container-3 {
+.container-4 {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+section.about .wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 section.about .details {
@@ -258,13 +353,10 @@ section.contact {
 
   background-image: url(./images/googlemaps.png);
   background-repeat: no-repeat;
-  background-size: auto 70%;
+  background-size: auto 100%;
   background-position: top right;
 }
-.container-4 {
-  width: 1200px;
-  height: 100vh;
-}
+
 section.contact .contact-info-form {
   width: 60%;
   height: 100vh;
@@ -272,7 +364,6 @@ section.contact .contact-info-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 section.contact input,
@@ -316,58 +407,46 @@ section.contact .info span {
 }
 
 /* Mobile */
-@media screen and (max-width: 600px) and (orientation: portrait) {
-  .container-1 {
+@media screen and (max-width: 599px) and (orientation: portrait) {
+  .container {
     width: 100%;
-    margin: 0;
-    height: auto;
+    margin: 0px;
   }
 
   /* HOME */
   section.home {
     height: auto;
-    width: 100%;
     padding-bottom: 20px;
   }
 
-  .menu {
-    display: flex;
+  section.home header {
     height: auto;
     flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  .logo {
-    width: 80%;
-    margin: 10px auto;
-  }
-
-  .logo img {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .menu nav {
-    width: 100%;
-    display: flex;
     justify-content: center;
   }
 
-  nav ul {
+  .logo {
     width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
-  .menu nav a {
+
+  .logo img {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav a {
     font-size: 12px;
   }
 
-  nav ul li {
-    height: 20px;
-    padding: 0;
+  nav li {
+    width: auto;
   }
 
   .promotion a {
@@ -377,18 +456,11 @@ section.contact .info span {
   }
 
   .promotion {
-    display: flex;
-    flex-direction: column;
+    grid-template: repeat(2, 1fr) / 1fr;
   }
 
-  .promotion .image img {
-    width: 100%;
-    padding: 0;
-  }
-
-  .promotion h1 {
-    font-size: 35px;
-    text-align: center;
+  .promotion img {
+    width: 120px;
   }
 
   .promotion p {
@@ -406,14 +478,13 @@ section.contact .info span {
     margin-top: 40px;
   }
 
-  .promotion img {
+  .promotion img.parfume {
     width: 80%;
     margin: 50px auto 0px auto;
   }
 
   /* SHOP */
   section.shop {
-    width: 100%;
     height: auto;
     padding: 60px 0px;
   }
@@ -460,7 +531,7 @@ section.contact .info span {
 
   /* ABOUT */
   section.about {
-    background-image: url(./images/bora.jpg);
+    background-image: url(../images/about-mobile-bg.jpg);
   }
 
   section.about .wrapper {
@@ -523,11 +594,10 @@ section.contact .info span {
 }
 
 /* Tablet */
-@media screen and (min-width: 900px) and (orientation: portrait) {
+@media screen and (min-width: 600px) and (orientation: portrait) {
   .container {
     width: 100%;
     margin: 0px;
-    height: auto;
   }
 
   /* HOME */
@@ -556,7 +626,7 @@ section.contact .info span {
     grid-column: 1;
   }
 
-  .promotion img.products {
+  .promotion img.parfume {
     width: 70%;
     margin: 50px auto 0px auto;
   }
@@ -589,7 +659,7 @@ section.contact .info span {
 
   /* ABOUT */
   section.about {
-    background-image: url(./images/bora.jpg);
+    background-image: url(../images/about-mobile-bg.jpg);
   }
 
   section.about .wrapper {
@@ -644,10 +714,10 @@ section.contact .info span {
 
 /* Laptop/Desktop */
 /* @media screen and (min-width: 1200px) {
-  } */
+} */
 
 /* ------------------------ Landscape ------------------------ */
-/* desktop */
+/* Tablet */
 @media screen and (max-width: 1200px) and (orientation: landscape) {
   section {
     overflow: hidden;
@@ -676,7 +746,7 @@ section.contact .info span {
     width: 100%;
     height: 40vh;
     margin: 70px 0px;
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     padding: 0px 30px;
@@ -707,16 +777,13 @@ section.contact .info span {
 
 /* Mobile */
 @media screen and (max-width: 820px) and (orientation: landscape) {
-  .container-1 {
-    margin: 0 auto;
+  .container {
     width: 100%;
-    height: auto;
   }
 
   /* HOME */
   section.home {
     height: 100vh !important;
-    
   }
 
   .promotion {
@@ -725,7 +792,7 @@ section.contact .info span {
 
   .promotion .text img {
     width: auto;
-    height: 80%;
+    height: 80px;
   }
 
   .promotion .text p {
