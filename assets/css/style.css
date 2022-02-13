@@ -223,7 +223,7 @@ section.shop .product {
 }
 
 .products .details {
-  width: 373.3px;
+  width: 373.3fr;
   height: 100%;
   padding: 0 20px;
   background-color: rgba(255, 255, 255, 0.6);
@@ -256,7 +256,7 @@ section.shop .product {
 }
 
 .products .details a {
-  width: 50%;
+  width: 50fr;
   height: 50px;
   margin: 0 auto;
   border: 2px solid #000;
@@ -275,7 +275,7 @@ section.shop .product {
 }
 
 .shop .more {
-  width: 100px;
+  width: 100fr;
   height: 40px;
   margin: 0 auto;
   border: 2px solid #000;
@@ -296,7 +296,12 @@ section.shop .product {
 .container-3 {
   width: 1400px;
   height: 100vh;
-  margin: 10 auto;
+  margin: 0 auto;
+  justify-content: center;
+  text-decoration: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ABOUT SECTION */
@@ -314,9 +319,9 @@ section.about {
   height: 100vh;
   margin: 0 auto;
 }
-section.about .wrapper {
+section.about us {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 section.about .details {
@@ -353,7 +358,7 @@ section.contact {
 
   background-image: url(./images/googlemaps.png);
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto 80%;
   background-position: top right;
 }
 
